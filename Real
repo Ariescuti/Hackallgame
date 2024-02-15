@@ -1,11 +1,2 @@
 game.Players.LocalPlayer:Kick("You Have Been Permerantly Banned For Reason: Hack/Exploit") 
-end 
-game: GetService"RunService".Heartbeat: Connect(function() 
-  sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge) 
-  pcall(function() 
-    for i, v in pairs(game.workspace.Enemies:GetChildren()) do 
-      if v.Humanoid.Health < 1 and not aD then 
-        v:Destroy() 
-      end 
-    end 
-  end)
+
